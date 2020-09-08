@@ -25,8 +25,8 @@ void filter(int *first, int *last){
   int *current = first;
   int *v = first;
   int aux;
-  while(current != last){
 
+  while(current != last){
     if(*current > 0){
       aux = *current;
       *current = *v;
@@ -34,9 +34,9 @@ void filter(int *first, int *last){
       v++;
     }
     current++;
-
   }
   last = v;
+
   while(first != last){
     std::cout << *first << " ";
     first++;
